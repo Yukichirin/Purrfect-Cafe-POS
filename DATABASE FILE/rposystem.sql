@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2025 at 10:51 AM
+-- Generation Time: May 16, 2025 at 05:40 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -87,7 +87,9 @@ INSERT INTO `orders` (`order_id`, `total_price`, `cash_received`, `change_amount
 ('ORD_67f8cd5e0199b', 46.00, 100.00, 54.00, '2025-04-11 08:05:50', '', 'DEN-1779'),
 ('ORD_67f8ce2a9663b', 131.00, 200.00, 69.00, '2025-04-11 08:09:14', '', 'DEN-1779'),
 ('ORD_67f8cefa9dc82', 90.00, 100.00, 10.00, '2025-04-11 08:12:42', '', 'DEN-1779'),
-('ORD_67f8d05de6714', 55.00, 100.00, 45.00, '2025-04-11 08:18:37', '', 'DEN-1779');
+('ORD_67f8d05de6714', 55.00, 100.00, 45.00, '2025-04-11 08:18:37', '', 'DEN-1779'),
+('ORD_6825b750d8edc', 147.00, 200.00, 53.00, '2025-05-15 09:43:44', '', 'KIV-1212'),
+('ORD_6825b78e89d33', 28.00, 100.00, 72.00, '2025-05-15 09:44:46', '', 'PAM-2158');
 
 -- --------------------------------------------------------
 
@@ -205,7 +207,14 @@ INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `quantity`, `price`) 
 (113, 'ORD_67f8cefa9dc82', '67f7f36b44484', 1, 13.00),
 (114, 'ORD_67f8cefa9dc82', '67f8af8f82dd2', 1, 27.00),
 (115, 'ORD_67f8d05de6714', '67f8cbf22b360', 1, 25.00),
-(116, 'ORD_67f8d05de6714', '67f8b3aaccfb5', 1, 30.00);
+(116, 'ORD_67f8d05de6714', '67f8b3aaccfb5', 1, 30.00),
+(117, 'ORD_6825b750d8edc', '67ed994376e7c', 1, 12.00),
+(118, 'ORD_6825b750d8edc', '67ed998dab100', 1, 15.00),
+(119, 'ORD_6825b750d8edc', '67f7f1dcd9f6d', 3, 5.00),
+(120, 'ORD_6825b750d8edc', '67ed9af76dd3d', 1, 15.00),
+(121, 'ORD_6825b750d8edc', '67f8b072da259', 3, 30.00),
+(122, 'ORD_6825b78e89d33', '67ed998dab100', 1, 15.00),
+(123, 'ORD_6825b78e89d33', '67ed9a367c823', 1, 13.00);
 
 -- --------------------------------------------------------
 
@@ -228,7 +237,7 @@ CREATE TABLE `rpos_admin` (
 
 INSERT INTO `rpos_admin` (`admin_id`, `admin_number`, `admin_name`, `admin_email`, `admin_password`, `admin_profile_pic`) VALUES
 (1, 'HAO-837', 'Admin', 'admin@mail.com', '$2y$10$eRvwhExbm5Zf9LsH/1lD7eFDG1f2l5KEGfS8X4fjBx28i1PbcYKL2', 'uploads/photo_2025-04-08_18-02-56.jpg'),
-(2, 'NOK-320', 'Admin', 'admin@mail.com', '531c154c293dfa54ca8eb77046c68c1aad5eb1f8', 'uploads/photo_2025-04-08_18-02-56.jpg');
+(2, 'NOK-320', 'Admin', 'admin@mail.com', '531c154c293dfa54ca8eb77046c68c1aad5eb1f8', 'uploads/1747302362_Omori x Dan Heng.jpg');
 
 -- --------------------------------------------------------
 
@@ -360,7 +369,7 @@ ALTER TABLE `rpos_staff`
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- AUTO_INCREMENT for table `rpos_admin`
